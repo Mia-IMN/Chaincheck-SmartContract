@@ -1,0 +1,14 @@
+[package]
+name = "payment_contract"
+version = "1.0.0"
+edition = "2024.beta"
+
+[dependencies]
+Sui = {git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/testnet", override = true}
+
+[addresses]
+# Replace this with your actual address (can use `sui client active-address` to get it)
+my_address = "0x53efdd747e93547bac597f5b8fd8cf24e16e347438ffb69a4170839bb2a9d94d"
+
+# The following is required if you are using `0x2` (standard for Sui framework)
+sui = "0x2"
